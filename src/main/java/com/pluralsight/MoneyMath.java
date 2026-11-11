@@ -32,5 +32,7 @@ public class MoneyMath {
         System.out.println();
         System.out.println("Float equals Double: " + (fNumber == dNumber));
         System.out.println("BigDecimal: " + (bNumber.compareTo(new BigDecimal(dNumber))));
+
+        System.out.println("Float number: " + fNumber + " | Double number: " + dNumber + " | BigDecimal number: " + bNumber);
     }
 }
