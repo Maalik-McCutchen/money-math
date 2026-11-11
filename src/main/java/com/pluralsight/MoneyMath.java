@@ -18,6 +18,19 @@ public class MoneyMath {
             System.out.println("Float number: " + fNumber + " | Double number: " + dNumber + " | BigDecimal number: " + bNumber);
 
         }
+        fNumber = 0;
+        dNumber = 0;
+        bNumber = BigDecimal.ZERO;
 
+        for (int i = 0; i < 1000; i++) {
+
+            fNumber += 19.99f;
+            dNumber += 19.99;
+            bNumber = bNumber.add(new BigDecimal("19.99"));
+
+        }
+        System.out.println();
+        System.out.println("Float equals Double: " + (fNumber == dNumber));
+        System.out.println("BigDecimal: " + (bNumber.compareTo(new BigDecimal(dNumber))));
     }
 }
